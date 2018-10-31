@@ -5,22 +5,23 @@
   <title>MIDI Movie Player</title>
 </head>
 <body>
+  <h1>MIDI Movie Player</h1>
   <div>
-    <h1>Source Video</h1>
+    <h2>Source Video</h2>
     <video controls id="source-video" width="480" height="270">
-      <source src="video.mp4" width="480px" height="270px">
+      <source src="movie.mp4" width="480" height="270">
     </video>
   </div>
 
   <div>
-    <h1>Resized Image</h1>
+    <h2>Resized Image</h2>
     <label for="threthold">Threthold</label>
     <input id="threthold" name="threthold" type="range" value="211" max="255" min="0" step="1">
     <canvas id="canvas" width="160" height="64" style="border: 1px solid black;"></canvas>
   </div>
 
   <div>
-    <h1>MIDI Output Settings</h1>
+    <h2>MIDI Output Settings</h2>
     <label>MIDI output to : </label>
     <select id="midi-output"></select>
     <p id="sysex"></p>
